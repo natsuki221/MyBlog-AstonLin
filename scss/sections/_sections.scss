@@ -1,0 +1,32 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+section {
+    position: relative;
+    .light-bg {
+        background-color: $light-green;
+    }
+    .dark-bg {
+        background-color: $footer;
+    }
+    .contact-bg {
+        background-color: $footer2;
+        padding: 4rem 0;
+        .cta-info {
+            padding: 3rem;
+            margin: 1rem 0;
+        }
+        .form {
+            padding: 3rem;
+        }
+    }
+    .about-card {
+        color: $footer;
+        font-family: "Noto Sans";
+        .head {
+            color: $white;
+            padding-top: 20px;
+            background-color: $secondary;
+        }
+    }
+}
